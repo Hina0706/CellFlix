@@ -18,6 +18,11 @@
 		32BBBB752A19FE1700E13441 /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BBBB742A19FE1700E13441 /* DownloadsViewController.swift */; };
 		32BBBB7D2A1A999B00E13441 /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BBBB7C2A1A999B00E13441 /* CollectionViewTableViewCell.swift */; };
 		32BBBB7F2A1AEC6E00E13441 /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BBBB7E2A1AEC6E00E13441 /* HeroHeaderUIView.swift */; };
+		32BBBB812A1C7D5F00E13441 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BBBB802A1C7D5F00E13441 /* APICaller.swift */; };
+		32BBBB832A1C8FCD00E13441 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BBBB822A1C8FCD00E13441 /* Title.swift */; };
+		32BBBB892A241EF200E13441 /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BBBB882A241EF200E13441 /* TitleCollectionViewCell.swift */; };
+		32BBBB8C2A24263600E13441 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 32BBBB8B2A24263600E13441 /* SDWebImage */; };
+		32BBBB8E2A24263600E13441 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 32BBBB8D2A24263600E13441 /* SDWebImageMapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +39,9 @@
 		32BBBB742A19FE1700E13441 /* DownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
 		32BBBB7C2A1A999B00E13441 /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
 		32BBBB7E2A1AEC6E00E13441 /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
+		32BBBB802A1C7D5F00E13441 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		32BBBB822A1C8FCD00E13441 /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
+		32BBBB882A241EF200E13441 /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32BBBB8E2A24263600E13441 /* SDWebImageMapKit in Frameworks */,
+				32BBBB8C2A24263600E13441 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +108,7 @@
 			children = (
 				32BBBB7C2A1A999B00E13441 /* CollectionViewTableViewCell.swift */,
 				32BBBB7E2A1AEC6E00E13441 /* HeroHeaderUIView.swift */,
+				32BBBB882A241EF200E13441 /* TitleCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -112,6 +123,7 @@
 		32BBBB792A1A978400E13441 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				32BBBB822A1C8FCD00E13441 /* Title.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -126,6 +138,7 @@
 		32BBBB7B2A1A994200E13441 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				32BBBB802A1C7D5F00E13441 /* APICaller.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -146,6 +159,10 @@
 			dependencies = (
 			);
 			name = CellFlix;
+			packageProductDependencies = (
+				32BBBB8B2A24263600E13441 /* SDWebImage */,
+				32BBBB8D2A24263600E13441 /* SDWebImageMapKit */,
+			);
 			productName = CellFlix;
 			productReference = 32BBBB562A19F92100E13441 /* CellFlix.app */;
 			productType = "com.apple.product-type.application";
@@ -174,6 +191,9 @@
 				Base,
 			);
 			mainGroup = 32BBBB4D2A19F92100E13441;
+			packageReferences = (
+				32BBBB8A2A24263600E13441 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 32BBBB572A19F92100E13441 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -203,11 +223,14 @@
 				32BBBB732A19FDE400E13441 /* SearchViewController.swift in Sources */,
 				32BBBB5E2A19F92100E13441 /* MainTabBarViewController.swift in Sources */,
 				32BBBB7D2A1A999B00E13441 /* CollectionViewTableViewCell.swift in Sources */,
+				32BBBB812A1C7D5F00E13441 /* APICaller.swift in Sources */,
 				32BBBB7F2A1AEC6E00E13441 /* HeroHeaderUIView.swift in Sources */,
 				32BBBB752A19FE1700E13441 /* DownloadsViewController.swift in Sources */,
 				32BBBB5A2A19F92100E13441 /* AppDelegate.swift in Sources */,
 				32BBBB5C2A19F92100E13441 /* SceneDelegate.swift in Sources */,
 				32BBBB712A19FDB400E13441 /* UpcomingViewController.swift in Sources */,
+				32BBBB892A241EF200E13441 /* TitleCollectionViewCell.swift in Sources */,
+				32BBBB832A1C8FCD00E13441 /* Title.swift in Sources */,
 				32BBBB6F2A19FD7000E13441 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +441,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		32BBBB8A2A24263600E13441 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		32BBBB8B2A24263600E13441 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 32BBBB8A2A24263600E13441 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		32BBBB8D2A24263600E13441 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 32BBBB8A2A24263600E13441 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 32BBBB4E2A19F92100E13441 /* Project object */;
 }
